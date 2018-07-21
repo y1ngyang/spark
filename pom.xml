@@ -117,11 +117,11 @@
     <sbt.project.name>spark</sbt.project.name>
     <slf4j.version>1.7.16</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <hadoop.version>2.6.5</hadoop.version>
+    <hadoop.version>2.7.7</hadoop.version>
     <protobuf.version>2.5.0</protobuf.version>
     <yarn.version>${hadoop.version}</yarn.version>
     <flume.version>1.6.0</flume.version>
-    <zookeeper.version>3.4.6</zookeeper.version>
+    <zookeeper.version>3.4.10</zookeeper.version>
     <curator.version>2.6.0</curator.version>
     <hive.group>org.spark-project.hive</hive.group>
     <!-- Version used in Maven Hive dependency -->
@@ -138,7 +138,7 @@
     <chill.version>0.8.4</chill.version>
     <ivy.version>2.4.0</ivy.version>
     <oro.version>2.0.8</oro.version>
-    <codahale.metrics.version>3.1.5</codahale.metrics.version>
+    <codahale.metrics.version>4.0.0</codahale.metrics.version>
     <avro.version>1.7.7</avro.version>
     <avro.mapred.classifier>hadoop2</avro.mapred.classifier>
     <jets3t.version>0.9.4</jets3t.version>
@@ -159,7 +159,7 @@
     <scala.binary.version>2.11</scala.binary.version>
     <codehaus.jackson.version>1.9.13</codehaus.jackson.version>
     <fasterxml.jackson.version>2.6.7</fasterxml.jackson.version>
-    <fasterxml.jackson.databind.version>2.6.7.1</fasterxml.jackson.databind.version>
+    <fasterxml.jackson.databind.version>2.8.11.1</fasterxml.jackson.databind.version>
     <snappy.version>1.1.7.1</snappy.version>
     <netlib.java.version>1.1.2</netlib.java.version>
     <calcite.version>1.2.0-incubating</calcite.version>
@@ -192,7 +192,7 @@
     <arrow.version>0.8.0</arrow.version>
 
     <test.java.home>${java.home}</test.java.home>
-    <test.exclude.tags></test.exclude.tags>
+    <test.exclude.tags/>
 
     <!-- Package to use when relocating shaded classes. -->
     <spark.shade.packageName>org.spark_project</spark.shade.packageName>
@@ -2356,7 +2356,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -2369,7 +2369,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -2382,7 +2382,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -2559,7 +2559,7 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="${project.build.directory}/tmp" />
+                <mkdir dir="${project.build.directory}/tmp"/>
               </target>
             </configuration>
           </execution>
@@ -2666,7 +2666,7 @@
     <profile>
       <id>hadoop-2.7</id>
       <properties>
-        <hadoop.version>2.7.3</hadoop.version>
+        <hadoop.version>2.7.7</hadoop.version>
         <curator.version>2.7.1</curator.version>
       </properties>
     </profile>
