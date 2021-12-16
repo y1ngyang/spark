@@ -118,7 +118,7 @@
     <slf4j.version>1.7.16</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
     <hadoop.version>2.6.5</hadoop.version>
-    <protobuf.version>2.5.0</protobuf.version>
+    <protobuf.version>3.4.0</protobuf.version>
     <yarn.version>${hadoop.version}</yarn.version>
     <flume.version>1.6.0</flume.version>
     <zookeeper.version>3.4.6</zookeeper.version>
@@ -139,7 +139,7 @@
     <ivy.version>2.4.0</ivy.version>
     <oro.version>2.0.8</oro.version>
     <codahale.metrics.version>3.1.5</codahale.metrics.version>
-    <avro.version>1.7.7</avro.version>
+    <avro.version>1.11.0</avro.version>
     <avro.mapred.classifier>hadoop2</avro.mapred.classifier>
     <jets3t.version>0.9.4</jets3t.version>
     <aws.kinesis.client.version>1.7.3</aws.kinesis.client.version>
@@ -163,7 +163,7 @@
     <snappy.version>1.1.7.1</snappy.version>
     <netlib.java.version>1.1.2</netlib.java.version>
     <calcite.version>1.2.0-incubating</calcite.version>
-    <commons-codec.version>1.10</commons-codec.version>
+    <commons-codec.version>1.13</commons-codec.version>
     <commons-io.version>2.4</commons-io.version>
     <!-- org.apache.commons/commons-lang/-->
     <commons-lang2.version>2.6</commons-lang2.version>
@@ -951,7 +951,7 @@
       <dependency>
         <groupId>org.apache.avro</groupId>
         <artifactId>avro-mapred</artifactId>
-        <version>${avro.version}</version>
+        <version>1.11.0</version>
         <classifier>${avro.mapred.classifier}</classifier>
         <scope>${hive.deps.scope}</scope>
         <exclusions>
